@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+     function MouseRollover (MyImage){
+		 MyImage.src = "image/1-01.jpg";
+	 }
+	 function MouseOut(MyImage){
+		 MyImage.src ="image/1-02-02.jpg";
+	 }
+	function MouseDown(MyImage){
+		MyImage.src = "image/1.jpg" ;
+	}
+	function Myfuntion(x){
+		x.style.background = "yellow";
+	}
+		function Myfuntion1(x){
+		x.style.background = "white";
+	}
+</script>
+</head>
+
+<body>
+<img src="image/1-02-02.jpg" width="500" height="450" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)" onMouseDown="MouseDown(this)" />
+<p>Name: <input type="text" id="fname" onFocus="Myfuntion(this)" onBlur="Myfuntion1(this)"></p>
+<p>Class: <input type="text" id="class" onFocus="Myfuntion(this)" onBlur="Myfuntion1(this)"></p>
+</body>
+</html>

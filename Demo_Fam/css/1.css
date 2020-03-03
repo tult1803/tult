@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+.containermain{
+	width: auto;
+	height: auto;
+}
+header{
+	width: 99%;
+	height: 50px;
+	background-color: white;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+	margin-top: -8px;
+	position: fixed;
+	z-index: 1;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.menu{
+	font-size: 20px;   
+	float: left;
+}
+.menu a{
+	color: black;
+	font-weight: bold;
+	line-height: 10px;
+	margin-left: 60px;
+	margin-top: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+.menu a:hover{
+	 color: #1198C8;
+}
+.searchmenu{
+	float: left;
+}
+.searchmenu input{
+	font-size: 20px;
+	width: 300px;
+	height: 20px;
+	margin: 10px 50px;
+}
+.logosearch{
+	position: absolute;
+	top: -1px;
+	right: 219px;
+}
+.logosearch img{
+	width: 50px;
+}
+nav{
+	width: 100%;
+	height: 630px;
+	position: relative;
+	top: 60px;
+}
+article{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.bestsell{
+	width: 99%;
+	height: auto;
+	float: left;
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+}
+	.sanpham{
+		 width: 250px;
+		height: auto;
+		margin-left: 100px;
+		position: relative;
+		float: left;
+	  box-shadow: 0px 0px 15px 1px rgba(71,67,71,1);
+       -moz-box-shadow: 0px 0px 15px 0px rgba(71,67,50,1);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(71,67,50,1);
+	}
+
+	.name{
+		color: black;
+		font-size: 24px;
+	}
+	.price{
+		color: blue;
+		font-size: 20px;
+	}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(58,57,57,0.5);
+}
+
+.sanpham:hover .overlay {
+  opacity: 1;
+	height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+aside{
+	width: 100%;
+	height: 20px;
+	float: left;
+}
+footer{
+		width: 100%;
+		height: 300px;
+		background-color: rgba(187,235,245,0.87);
+		clear: both;
+	}
+
+footer .footer_left{
+	float: left;
+	width: 45.335%;
+}
+footer .footer_right{
+	float: left;
+	width: 29%;
+	margin-right: 10px;
+}
+footer .footer_rightright{
+	float: left;
+	width: 25%;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.footer_left ul li h2{
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	margin-left: 125px;
+	margin-top: -10px;
+	font-size: 50px;
+}
+.logo{
+	margin-top: -15px;
+	padding-left: 20px;
+}
+
+.connect img{
+	width: 150px;
+	margin-left: 70px;
+}
+.logofooter{
+	position: absolute;
+	top: 2060px;
+	left: 250px;
+}
+.space{
+	width: 100%;
+	height: 10px;
+	float: left;
+}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+.containermain{
+	width: auto;
+	height: auto;
+}
+header{
+	width: 99%;
+	height: 80px;
+	background-color: white;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+	margin-top: -8px;
+	position: fixed;
+	z-index: 1;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	width: 150px;
+	margin-top: 35px;
+	margin-left: 10px;
+}
+.menu{
+	margin-top: 20px;
+	font-size: 20px;   
+	float: left;
+}
+.menu a{
+	color: black;
+	font-weight: bold;
+	line-height: 10px;
+	margin-left: 60px;
+	margin-top: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+.menu a:hover{
+	 color: #1198C8;
+}
+.searchmenu{
+	float: left;
+}
+.searchmenu input{
+	font-size: 20px;
+	width: 300px;
+	height: 20px;
+	margin: 30px 50px;
+}
+.logosearch{
+	position: absolute;
+	top: 18px;
+	right: 219px;
+}
+.logosearch img{
+	width: 50px;
+}
+nav img{
+	margin-top: 80px;
+	margin-left: 90px;
+}
+article{
+	font-size: 30px;
+	width: 50%;
+	height: 550px;
+	background-color: aliceblue;
+	float: left;
+}
+.text1{
+	margin-top: 80px;
+	margin-left: 10px;
+}
+aside{
+	border-left: 1px solid;
+	width: 49%;
+	height: 550px;
+	background-color: aliceblue;
+	float: left;
+}
+.form{
+		margin-top: 50px;
+	margin-left: 50px;
+	width: 50%;
+	height: 60px;
+	float: left;
+}
+.form input{
+	font-size: 20px;
+	margin-top: 30px;
+	width: 500px;
+	height: 30px;
+}
+.form .abc{
+	margin-top: -10px;
+	font-size: 24px;
+	height: 50px;
+	width: 150px;
+}
+.form tr td .content{
+	width: 500px;
+	height: 200px;
+}
+footer{
+		width: 100%;
+		height: 300px;
+		background-color: rgba(187,235,245,0.87);
+		clear: both;
+	}
+
+footer .footer_left{
+	float: left;
+	width: 45%;
+}
+footer .footer_right{
+	float: left;
+	width: 29%;
+	margin-right: 10px;
+}
+footer .footer_rightright{
+	float: left;
+	width: 25%;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.footer_left ul li h2{
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	margin-left: 125px;
+	margin-top: -10px;
+	font-size: 50px;
+}
+.logo{
+	margin-top: -15px;
+	padding-left: 20px;
+}
+
+.connect img{
+	width: 150px;
+	margin-left: 70px;
+}
+.logofooter{
+	position: absolute;
+	top: 1100px;
+	left: 250px;
+}
