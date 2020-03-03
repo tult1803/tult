@@ -1,0 +1,18 @@
+SMAP
+sendmail_jsp.java
+JSP
+*S JSP
+*F
++ 0 sendmail.jsp
+sendmail.jsp
+*L
+1,57:44
+58:101,3
+59,3:104
+62:107,3
+63,2:110
+65:112,3
+66,2:115
+68:117,3
+69,26:120
+*E
