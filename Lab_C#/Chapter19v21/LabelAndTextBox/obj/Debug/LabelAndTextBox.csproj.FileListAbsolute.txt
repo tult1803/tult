@@ -1,0 +1,9 @@
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.MainWindow.resources
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.Properties.Resources.resources
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.csproj.GenerateResource.Cache
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.csproj.CoreCompileInputs.cache
+D:\Projects\LabelAndTextBox\bin\Debug\LabelAndTextBox.exe.config
+D:\Projects\LabelAndTextBox\bin\Debug\LabelAndTextBox.exe
+D:\Projects\LabelAndTextBox\bin\Debug\LabelAndTextBox.pdb
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.exe
+D:\Projects\LabelAndTextBox\obj\Debug\LabelAndTextBox.pdb

@@ -1,0 +1,20 @@
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.frmEmployee.resources
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.FrmSearchResult.resources
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.Properties.Resources.resources
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.csproj.GenerateResource.Cache
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeForm\bin\Debug\EmployeeForm.exe.config
+D:\Projects\EmployeeForm\bin\Debug\EmployeeForm.exe
+D:\Projects\EmployeeForm\bin\Debug\EmployeeForm.pdb
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.exe
+D:\Projects\EmployeeForm\obj\Debug\EmployeeForm.pdb
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\bin\Debug\EmployeeForm.exe.config
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\bin\Debug\EmployeeForm.exe
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\bin\Debug\EmployeeForm.pdb
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.csprojAssemblyReference.cache
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.frmEmployee.resources
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.FrmSearchResult.resources
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.Properties.Resources.resources
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.csproj.GenerateResource.cache
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.exe
+C:\Users\Le Thanh Tu\Desktop\Chapter19v21\EmployeeForm\obj\Debug\EmployeeForm.pdb

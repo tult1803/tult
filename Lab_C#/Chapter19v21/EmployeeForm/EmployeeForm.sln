@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeForm", "EmployeeForm.csproj", "{11F01EFF-3E73-446E-8162-96E91428DA2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F01EFF-3E73-446E-8162-96E91428DA2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F01EFF-3E73-446E-8162-96E91428DA2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F01EFF-3E73-446E-8162-96E91428DA2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F01EFF-3E73-446E-8162-96E91428DA2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8203A819-C7A5-43B5-B3BB-71161E91D117}
+	EndGlobalSection
+EndGlobal
