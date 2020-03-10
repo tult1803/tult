@@ -62,10 +62,24 @@
             this.clQualification = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lberror = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pnSearchOptions = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnFilter = new System.Windows.Forms.Button();
+            this.cbNationalFilter = new System.Windows.Forms.ComboBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.BtnSearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEmployees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -87,7 +101,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(0, 8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(294, 335);
             this.groupBox1.TabIndex = 0;
@@ -133,6 +147,7 @@
             // 
             // cmbQua
             // 
+            this.cmbQua.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbQua.FormattingEnabled = true;
             this.cmbQua.Items.AddRange(new object[] {
@@ -165,6 +180,7 @@
             // 
             // cmbNational
             // 
+            this.cmbNational.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNational.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNational.FormattingEnabled = true;
             this.cmbNational.Items.AddRange(new object[] {
@@ -284,7 +300,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(27, 353);
+            this.btnNew.Location = new System.Drawing.Point(25, 349);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 23);
             this.btnNew.TabIndex = 1;
@@ -294,7 +310,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(120, 353);
+            this.btnAdd.Location = new System.Drawing.Point(122, 349);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -304,21 +320,23 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(27, 395);
+            this.btnDelete.Location = new System.Drawing.Point(25, 391);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(120, 395);
+            this.btnUpdate.Location = new System.Drawing.Point(122, 390);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dgEmployees
             // 
@@ -333,67 +351,196 @@
             this.clAddress,
             this.clQualification,
             this.clSalary});
-            this.dgEmployees.Location = new System.Drawing.Point(312, 199);
+            this.dgEmployees.Location = new System.Drawing.Point(326, 178);
             this.dgEmployees.MultiSelect = false;
             this.dgEmployees.Name = "dgEmployees";
-            this.dgEmployees.Size = new System.Drawing.Size(476, 228);
+            this.dgEmployees.RowHeadersWidth = 82;
+            this.dgEmployees.Size = new System.Drawing.Size(498, 228);
             this.dgEmployees.TabIndex = 5;
+            this.dgEmployees.AllowUserToDeleteRowsChanged += new System.EventHandler(this.btnDelete_Click);
+            this.dgEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgEmployees_CellContentClick);
             // 
             // clName
             // 
+            this.clName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.clName.HeaderText = "Full Name";
+            this.clName.MinimumWidth = 10;
             this.clName.Name = "clName";
+            this.clName.Width = 150;
             // 
             // clBirthday
             // 
             this.clBirthday.HeaderText = "Birthday";
+            this.clBirthday.MinimumWidth = 10;
             this.clBirthday.Name = "clBirthday";
             // 
             // clGender
             // 
             this.clGender.HeaderText = "Gender";
+            this.clGender.MinimumWidth = 10;
             this.clGender.Name = "clGender";
+            this.clGender.Width = 50;
             // 
             // clNational
             // 
             this.clNational.HeaderText = "National";
+            this.clNational.MinimumWidth = 10;
             this.clNational.Name = "clNational";
             // 
             // clPhone
             // 
             this.clPhone.HeaderText = "Phone";
+            this.clPhone.MinimumWidth = 10;
             this.clPhone.Name = "clPhone";
             // 
             // clAddress
             // 
             this.clAddress.HeaderText = "Address";
+            this.clAddress.MinimumWidth = 10;
             this.clAddress.Name = "clAddress";
+            this.clAddress.Width = 150;
             // 
             // clQualification
             // 
             this.clQualification.HeaderText = "Qualification";
+            this.clQualification.MinimumWidth = 10;
             this.clQualification.Name = "clQualification";
             // 
             // clSalary
             // 
             this.clSalary.HeaderText = "Salary";
+            this.clSalary.MinimumWidth = 10;
             this.clSalary.Name = "clSalary";
             // 
             // error
             // 
             this.error.ContainerControl = this;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.groupBox4);
+            this.groupBox3.Controls.Add(this.pnSearchOptions);
+            this.groupBox3.Controls.Add(this.btnLoad);
+            this.groupBox3.Controls.Add(this.btnSave);
+            this.groupBox3.Controls.Add(this.lberror);
+            this.groupBox3.Controls.Add(this.dgEmployees);
+            this.groupBox3.Controls.Add(this.btnDelete);
+            this.groupBox3.Controls.Add(this.btnUpdate);
+            this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Controls.Add(this.btnAdd);
+            this.groupBox3.Controls.Add(this.btnNew);
+            this.groupBox3.Location = new System.Drawing.Point(6, 0);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(898, 418);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // lberror
+            // 
+            this.lberror.AutoSize = true;
+            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.ForeColor = System.Drawing.Color.Red;
+            this.lberror.Location = new System.Drawing.Point(332, 158);
+            this.lberror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lberror.Name = "lberror";
+            this.lberror.Size = new System.Drawing.Size(0, 17);
+            this.lberror.TabIndex = 6;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(213, 349);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Save file";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(213, 390);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 8;
+            this.btnLoad.Text = "Load file";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // pnSearchOptions
+            // 
+            this.pnSearchOptions.Location = new System.Drawing.Point(317, 18);
+            this.pnSearchOptions.Name = "pnSearchOptions";
+            this.pnSearchOptions.Size = new System.Drawing.Size(372, 137);
+            this.pnSearchOptions.TabIndex = 29;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.BtnFilter);
+            this.groupBox4.Controls.Add(this.cbNationalFilter);
+            this.groupBox4.Controls.Add(this.txtSearch);
+            this.groupBox4.Controls.Add(this.BtnSearch);
+            this.groupBox4.Location = new System.Drawing.Point(326, 40);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(336, 95);
+            this.groupBox4.TabIndex = 27;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Search";
+            // 
+            // BtnFilter
+            // 
+            this.BtnFilter.Location = new System.Drawing.Point(148, 55);
+            this.BtnFilter.Name = "BtnFilter";
+            this.BtnFilter.Size = new System.Drawing.Size(75, 23);
+            this.BtnFilter.TabIndex = 29;
+            this.BtnFilter.Text = "Filter";
+            this.BtnFilter.UseVisualStyleBackColor = true;
+            this.BtnFilter.Click += new System.EventHandler(this.BtnFilter_Click_1);
+            // 
+            // cbNationalFilter
+            // 
+            this.cbNationalFilter.FormattingEnabled = true;
+            this.cbNationalFilter.Items.AddRange(new object[] {
+            "Vietnam",
+            "Singapore",
+            "China",
+            "Laos",
+            "Campodia",
+            "Thailand"});
+            this.cbNationalFilter.Location = new System.Drawing.Point(7, 58);
+            this.cbNationalFilter.Name = "cbNationalFilter";
+            this.cbNationalFilter.Size = new System.Drawing.Size(121, 21);
+            this.cbNationalFilter.TabIndex = 28;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(6, 22);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(235, 20);
+            this.txtSearch.TabIndex = 27;
+            // 
+            // BtnSearch
+            // 
+            this.BtnSearch.Location = new System.Drawing.Point(247, 20);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(75, 23);
+            this.BtnSearch.TabIndex = 26;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgEmployees);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnNew);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
             this.Text = "Lab3";
             this.groupBox1.ResumeLayout(false);
@@ -402,6 +549,10 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEmployees)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -432,6 +583,9 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dgEmployees;
+        private System.Windows.Forms.ErrorProvider error;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.DataGridViewTextBoxColumn clName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clBirthday;
         private System.Windows.Forms.DataGridViewTextBoxColumn clGender;
@@ -440,7 +594,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn clQualification;
         private System.Windows.Forms.DataGridViewTextBoxColumn clSalary;
-        private System.Windows.Forms.ErrorProvider error;
+        private System.Windows.Forms.Label lberror;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BtnFilter;
+        private System.Windows.Forms.ComboBox cbNationalFilter;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button BtnSearch;
+        private System.Windows.Forms.Panel pnSearchOptions;
     }
 }
 

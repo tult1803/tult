@@ -7,3 +7,13 @@ C:\Users\Le Thanh Tu\Desktop\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.Properties.Resource
 C:\Users\Le Thanh Tu\Desktop\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
 C:\Users\Le Thanh Tu\Desktop\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.exe
 C:\Users\Le Thanh Tu\Desktop\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.Form1.resources
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\tudai\Desktop\tult-master\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\Le Thanh Tu\Desktop\Lab_C#\Lab3\Lab3\obj\Debug\Lab3.FrmSearchResult.resources
