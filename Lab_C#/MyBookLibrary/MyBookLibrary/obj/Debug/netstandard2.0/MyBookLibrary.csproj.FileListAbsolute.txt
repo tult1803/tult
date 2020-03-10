@@ -1,0 +1,8 @@
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\bin\Debug\netstandard2.0\MyBookLibrary.deps.json
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\bin\Debug\netstandard2.0\MyBookLibrary.dll
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\bin\Debug\netstandard2.0\MyBookLibrary.pdb
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\obj\Debug\netstandard2.0\MyBookLibrary.csprojAssemblyReference.cache
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\obj\Debug\netstandard2.0\MyBookLibrary.AssemblyInfoInputs.cache
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\obj\Debug\netstandard2.0\MyBookLibrary.AssemblyInfo.cs
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\obj\Debug\netstandard2.0\MyBookLibrary.dll
+C:\Users\Le Thanh Tu\Desktop\ClassLibrary\ClassLibrary\obj\Debug\netstandard2.0\MyBookLibrary.pdb
